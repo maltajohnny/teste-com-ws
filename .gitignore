@@ -1,0 +1,25 @@
+# Arquivos e diretórios gerados pelo Cypress
+/cypress/screenshots/
+/cypress/videos/
+#/cypress/fixtures/
+
+# Arquivos de resultados de testes do Cypress
+/mochawesome-report/
+/cypress/results/
+
+# Node.js e NPM
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de dependências locais (se você estiver usando Yarn)
+.yarn/
+
+# Outros arquivos e diretórios específicos do seu projeto
+/dist/
+/public/
+/build/
+.DS_Store

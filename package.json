@@ -1,0 +1,23 @@
+{
+  "name": "teste-com-ws",
+  "version": "1.0.0",
+  "description": "Teste incial com WS",
+  "homepage": "https://github.com/maltajohnny/teste-com-ws#readme",
+  "bugs": {
+    "url": "https://github.com/maltajohnny/teste-com-ws/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maltajohnny/teste-com-ws.git"
+  },
+  "license": "ISC",
+  "author": "JOHNNY & WASHINGTON",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.2.0"
+  }
+}
