@@ -25,7 +25,7 @@ describe("Validar Fluxo de Login na aplicação com diferentes cenários", () =>
     });
 
 
-    it("Validar fluxo de login com: Credêncial válidas", () => {
+    it("Validar fluxo de login com: Credênciais válidas", () => {
       Login.valid();
 
       cy.get("b").should("have.text", "You logged into a secure area!");
