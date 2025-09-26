@@ -22,5 +22,13 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Desabilitar DBus para Cypress
+        run: export NO_AT_BRIDGE=1 # Desabilita o DBus, evitando o erro
+
       - name: Rodar testes Cypress
-        run: npm run cy:run
+        run: npm run cy:run --headless --no-exit # Executando Cypress em modo headless
+
+      - name: Gerar relatórios TypeScript
+        run: |
+          npx ts-node scripts/generate-reports.ts
+          npx ts-node cypress/utils/send-email.ts
