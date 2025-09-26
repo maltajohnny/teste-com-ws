@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "cy:run": "npx cypress run "
+    "cy:run": "npx cypress run && npx ts-node scripts/generate-reports.ts && npx ts-node cypress/utils/send-email.ts"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
